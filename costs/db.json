@@ -1,20 +1,54 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "id": "ebf1",
+      "name": "teste",
+      "budget": "14",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "aafa",
+      "name": "teste1",
+      "budget": "12",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "de0e",
+      "name": "teste 3",
+      "budget": "13",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": []
+    }
+  ],
   "categories": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Infra"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Desenvolvimento"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Design"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Planejamento"
     }
   ]
