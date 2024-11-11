@@ -25,8 +25,8 @@ function Projects() {
     })
       .then((resp) => resp.json())
       .then((data) => {
-        console.log(data)
-        setProjects(data)
+        console.log(data);
+        setProjects(data);
       })
 
       .catch((err) => console.log(err));
@@ -40,7 +40,16 @@ function Projects() {
       </div>
       {message && <Message type="success" msg={message} />}
       <Container customClass="start">
-        <p>Projetos...</p>
+        {projects.length > 0 &&
+          projects.map((project) => (
+            <ProjectCard
+              name={project.name}
+              id={project.id}
+              budget={project.budget}
+              category={project.category.name}
+              key={project.id}
+            />
+          ))}
       </Container>
     </div>
   );

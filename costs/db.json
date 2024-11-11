@@ -54,6 +54,17 @@
       },
       "cost": 0,
       "services": []
+    },
+    {
+      "id": "92d0",
+      "name": "New Project",
+      "budget": "320000",
+      "category": {
+        "id": "4",
+        "name": "Planejamento"
+      },
+      "cost": 0,
+      "services": []
     }
   ],
   "categories": [
