@@ -39,7 +39,7 @@ function Project() {
               <h1>Projeto: {project.name}</h1>
               <button onClick={toggleProjectForm} className={styles.btn}>{!showProjectForm ? 'Editar Projeto': 'Fechar'}</button>
               {!showProjectForm ? (
-                <div>
+                <div className={styles.project_info}>
                   <p>
                     <span>Categoria:</span> {project.category.name}
                   </p>
@@ -51,7 +51,7 @@ function Project() {
                   </p>
                 </div>          
               ) : (
-                <div>
+                <div className={styles.project_info}>
                   <p>Detalhes</p>
                 </div>
               )}
