@@ -54,6 +54,8 @@ function Project() {
         setType('success')
       })
       .catch((err) => console.log(err));
+
+      setMessage()
   }
 
   function toggleProjectForm() {
