@@ -3,7 +3,18 @@
     {
       "id": "7c84",
       "name": "testeEDE",
-      "budget": "12",
+      "budget": "122",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "35da",
+      "name": "Teste2",
+      "budget": "122",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"

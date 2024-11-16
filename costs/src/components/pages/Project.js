@@ -12,8 +12,9 @@ function Project() {
 
   const [project, setProject] = useState([]);
   const [showProjectForm, setShowProjectForm] = useState(false);
-  const [message, setMessage] = useState()
-  const [type, setType] = useState()
+  const [showServiceForm, setShowServiceForm] = useState(false);
+  const [message, setMessage] = useState();
+  const [type, setType] = useState();
 
   useEffect(() => {
     setTimeout(() => {
@@ -32,11 +33,20 @@ function Project() {
   }, [id]);
 
   function editPost(project) {
+    setMessage("");
+    console.log(message);
     // budget validation
     if (project.budget < project.cost) {
-      setMessage('O orçamento não pode ser menor que o custo do projeto!')
-      setType('error')
-      return false
+      setMessage(
+        "O orçamento do projeto não pode ser menor do que o custo dos serviços!"
+      );
+      setType("error");
+
+      setTimeout(() => {
+        setMessage("");
+      }, 3000);
+
+      return false;
     }
 
     fetch(`http://localhost:5000/projects/${project.id}`, {
@@ -48,18 +58,20 @@ function Project() {
     })
       .then((resp) => resp.json())
       .then((data) => {
-        setProject(data)
-        setShowProjectForm(false)
-        setMessage('Projeto Atualizado!')
-        setType('success')
+        setProject(data);
+        setShowProjectForm(false);
+        setMessage("Projeto Atualizado!");
+        setType("success");
       })
       .catch((err) => console.log(err));
-
-      setMessage()
   }
 
   function toggleProjectForm() {
     setShowProjectForm(!showProjectForm);
+  }
+
+  function toggleServiceForm() {
+    setShowServiceForm(!showServiceForm);
   }
 
   return (
@@ -99,6 +111,21 @@ function Project() {
                 </div>
               )}
             </div>
+            
+            <div className={styles.service_form_container}>
+              <h2>Adicione um serviço:</h2>
+              <button onClick={toggleServiceForm} className={styles.btn}>
+                {!showServiceForm ? "Adicionar serviço" : "Fechar"}
+              </button>
+              <div className={styles.project_info}>
+                {showServiceForm && <div>formulário</div>}
+              </div>
+            </div>
+              {/* Area de Serviços */}
+            <h2>Serviços</h2>
+            <Container customClass="start">
+              <p>Serviços</p>
+            </Container>
           </Container>
         </div>
       ) : (
