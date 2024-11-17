@@ -2,14 +2,27 @@
   "projects": [
     {
       "id": "7c84",
-      "name": "testeEDE",
-      "budget": "122",
+      "name": "Projeto1",
+      "budget": "200",
       "category": {
         "id": "1",
         "name": "Infra"
       },
-      "cost": 0,
-      "services": []
+      "cost": 200,
+      "services": [
+        {
+          "name": "teste",
+          "cost": "100",
+          "description": "asdasdsad",
+          "id": "ff1b90e5-60d9-4189-801b-6f949d001e9d"
+        },
+        {
+          "name": "teste",
+          "cost": "100",
+          "description": "asdasdsad",
+          "id": "ff1b90e5-60d9-4189-801b-6f949d001e9d"
+        }
+      ]
     },
     {
       "id": "35da",
