@@ -1,24 +1,6 @@
 {
   "projects": [
     {
-      "id": "7c84",
-      "name": "Projeto1",
-      "budget": "3000",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": null,
-      "services": [
-        {
-          "name": "Contratar Estagiario",
-          "cost": "1000",
-          "description": "teste",
-          "id": "4d784f5d-65f0-4c05-a230-8598d70605e6"
-        }
-      ]
-    },
-    {
       "id": "35da",
       "name": "Teste2",
       "budget": "122",
@@ -28,6 +10,30 @@
       },
       "cost": 0,
       "services": []
+    },
+    {
+      "id": "9777",
+      "name": "Front-End",
+      "budget": "3000",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 1500,
+      "services": [
+        {
+          "name": "Contratar Estagiario",
+          "cost": "1000",
+          "description": "Desenvolver",
+          "id": "5f634ddb-1be9-4f3d-9048-5af07bbd1018"
+        },
+        {
+          "name": "Criar Website",
+          "cost": "500",
+          "description": "Desenvolver",
+          "id": "39e9e26c-d0fc-4f42-a4f4-3d0ff8748bf7"
+        }
+      ]
     }
   ],
   "categories": [

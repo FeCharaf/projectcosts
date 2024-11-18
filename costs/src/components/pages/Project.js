@@ -106,7 +106,10 @@ function Project() {
     })
       .then((resp) => resp.json())
       .then((data) => {
-        setShowServiceForm(false);
+        setServices(data.services)
+        setShowServiceForm(!showServiceForm)
+        setMessage('Serviço adicionado!')
+        setType('success')
       })
       .catch((err) => console.log(err));
   }
@@ -209,7 +212,7 @@ function Project() {
                     name={service.name}
                     cost={service.cost}
                     description={service.description}
-                    key={service.key}
+                    key={service.id}
                     handleRemove={removeService}
                   />
                 ))}
