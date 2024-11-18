@@ -8,37 +8,13 @@
         "id": "1",
         "name": "Infra"
       },
-      "cost": 300,
+      "cost": null,
       "services": [
         {
-          "name": "teste",
-          "cost": "100",
-          "description": "asdasdsad",
-          "id": "ff1b90e5-60d9-4189-801b-6f949d001e9d"
-        },
-        {
-          "name": "teste2",
-          "cost": "100",
-          "description": "asdasdsad",
-          "id": "ff1b90e5-60d9-4189-801b-6f949d001e9d"
-        },
-        {
-          "name": "Contratar Dev Java",
-          "cost": "-1",
-          "description": "Desenvolver",
-          "id": "af0fbcf9-8551-47b3-927f-6a4ef02f6f5d"
-        },
-        {
           "name": "Contratar Estagiario",
-          "cost": "100",
+          "cost": "1000",
           "description": "teste",
-          "id": "1b6c4587-c05b-4d00-af89-fa2e06722d64"
-        },
-        {
-          "name": "teste3",
-          "cost": "1",
-          "description": "teste",
-          "id": "b4d34d8a-c5cb-4130-b1c2-48c4cfa92386"
+          "id": "4d784f5d-65f0-4c05-a230-8598d70605e6"
         }
       ]
     },
